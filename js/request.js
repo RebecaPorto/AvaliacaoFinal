@@ -11,10 +11,12 @@ function cadastrar() {
       rodas: document.querySelector('[name="Rodas"]').value,
       altura: document.querySelector('[name="Altura"]').value,
       marca: document.querySelector('[name="Marca"]').value,
-      kmrodado: document.querySelector('[name="Kmrodado"]').value,
+      kmrodado: document.querySelector('[name="Km-rodado"]').value,
       eixos: document.querySelector('[name="Eixos"]').value,
 
     }
+
+    console.log(dados);
 
   // Faz requisição ao servidor usando o verbo POST, enviando os dados para o servidor
   fetch(`${url_server}/cadastro`, {
