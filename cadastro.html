@@ -4,54 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Pessoa</title>
+    <title>Cadastro Veiculos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
-  
+</head>
 
 <body>
     <h1>CADASTRAR VEICULOS</h1>
 
-    <div class="principal">
-        <div class="input-esquerda">
-            
-            <p>Placa:</p>
-            <input type="text" class="form-control" name="Placa" id="id-placa" placeholder="Placa:">
-            <p>Modelo:</p>
-            <input type="text" class="form-control" name="Modelo" id="id-modelo" placeholder="Modelo:">
-            <p>Combustivel:</p>
-            <input type="text" class="form-control" name="Combustivel" id="id-combustivel" placeholder="Combustivel:">
-            <p>Rodas:</p>
-            <input type="number" class="form-control" name="Rodas" id="id-Rodas" placeholder="Rodas:">
-
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/cars.jpg" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/red car.jpg" class="d-block w-100" alt="Imagem 2">
+            </div>
         </div>
 
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <div class="principal">
+        <div class="input-esquerda">
+            <p>Placa:</p>
+            <input type="text" class="form-control" name="Placa" id="id-Placa" placeholder="Placa:">
+            <p>Modelo:</p>
+            <input type="text" class="form-control" name="Modelo" id="id-Modelo" placeholder="Modelo:">
+            <p>Combustivel:</p>
+            <input type="text" class="form-control" name="Combustivel" id="id-Combustivel" placeholder="Combustivel:">
+            <p>Rodas:</p>
+            <input type="number" class="form-control" name="Rodas" id="id-Rodas" placeholder="Rodas:">
+            <p>Numero Portas:</p>
+            <input type="number" class="form-control" name="Numero-portas" id="Numero-portas" placeholder="Numero-portas">
+            <p>Tipo</p>
+            <input type="number" class="form-control" name="Tipo" id="Tipo" placeholder="Tipo">
+        </div>
 
         <div class="input-direita">
-            <p>Altura:</p> 
-            <input type="number" class="form-control" name="Altura" id="altura" placeholder="Altura:">
-            <p>marca:</p>
-            <input type="text" class="form-control" name="Marca" id="marca" placeholder="marca:">
-           
-            <p>km rodado:</p>
-            <input type="number" class="form-control" name="Km-rodado" id="km-rodado" placeholder="km rodado:">
-           
-            <p>eixos:</p>
-            <input type="number" class="form-control" name="Eixos" id="eixos" placeholder="eixos:">
-        
-            
+            <p>Altura:</p>
+            <input type="number" class="form-control" name="Altura" id="Altura" placeholder="Altura:">
+            <p>Marca:</p>
+            <input type="text" class="form-control" name="Marca" id="Marca" placeholder="Marca:">
+            <p>Km rodado:</p>
+            <input type="number" class="form-control" name="Km-rodado" id="Km-rodado" placeholder="Km-rodado:">
+            <p>Eixos:</p>
+            <input type="number" class="form-control" name="Eixos" id="Eixos" placeholder="Eixos:">
+            <p>Capacidade carga:</p>
+            <input type="number" class="form-control" name="Capacidade-carga" id="Capacidade-carga" placeholder="Capacidade-carga">
+            <p>Tipo carga:</p>
+            <input type="number" class="form-control" name="Tipo-carga" id="Tipo-carga" placeholder="Tipo-carga">
+
             <form>
                 <button onclick="cadastrar()">CADASTRAR</button>
             </form>
-          
-        
-
-                </div>
-            </div>
         </div>
     </div>
-    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/request.js"></script>
-  
+
 </body>
-</head>
+
 </html>
